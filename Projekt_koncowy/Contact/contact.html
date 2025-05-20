@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrailForge | Contact Us</title>
+  <link rel="stylesheet" href="contact_styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="bialyTrailForge.png" alt="TrailForge Logo"/>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="http://127.0.0.1:3000/Self/Projekt_koncowy/index/index.html">Home</a></li>
+          <li><a href="http://127.0.0.1:3000/Self/Projekt_koncowy/Trail building/Trail.html">Trail Building</a></li>
+          <li><a href="http://127.0.0.1:3000/Self/Projekt_koncowy/Contact/contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO CONTAINER -->
+  <section class="hero contact-full">
+    <div class="hero-content">
+      <h1>Contact Us!</h1>
+      <p class="phone-number" id="phone">Loading phone...</p>
+      <p class="phone-number">Email us: info@trailforge.com</p>
+
+      <form id="contactForm" action="contact.php" method="POST" class="contact-form">
+        <label>
+          Full Name
+          <input type="text" name="name" required maxlength="100" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required maxlength="150" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" required rows="6" maxlength="1000"></textarea>
+        </label>
+        <button type="submit" class="cta-button">Send Message</button>
+        <p id="returningMsg" class="returning"></p>
+      </form>
+
+      <canvas id="stickmanCanvas" width="300" height="300"></canvas>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TrailForge. All rights reserved.</p>
+      <p>Contact: <a href="mailto:info@trailforge.com">info@trailforge.com</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
